@@ -1,35 +1,33 @@
-# Uji Keberuntungan - React & Bulma
+# Uji Keberuntungan - React Game
 
-Sebuah website permainan sederhana untuk menguji keberuntungan Anda. Dibuat menggunakan React.js dan framework CSS Bulma.
+Sebuah game sederhana yang dibuat dengan React, Vite, dan Bulma untuk menguji keberuntungan Anda.
+
+## Aturan Main
+
+1.  Anda akan dihadapkan pada dua pilihan objek di setiap ronde.
+2.  Pilih salah satu objek yang menurut Anda benar.
+3.  Permainan berlangsung selama 10 ronde.
+4.  Di akhir permainan, total skor Anda akan ditampilkan.
 
 ## Fitur
 
--   Mode Gelap (Dark Mode)
--   Desain Responsif
 -   10 Ronde permainan
--   Skor akhir di akhir permainan
--   Animasi sederhana untuk pengalaman pengguna yang lebih baik
+-   Tema gelap (Dark Mode)
+-   Desain Responsif
+-   Dibuat sepenuhnya di frontend (tanpa backend)
 
-## Cara Menjalankan Proyek
+## Instalasi dan Menjalankan Proyek
 
 1.  **Clone repository ini**
 
-2.  **Install dependencies**
+2.  **Install dependencies:**
     ```bash
     npm install
     ```
 
-3.  **Jalankan development server**
+3.  **Jalankan development server:**
     ```bash
-    npm start
+    npm run dev
     ```
 
-    Aplikasi akan berjalan di `http://localhost:3000`.
-
-## Aturan Main
-
-1.  Anda akan disajikan dua pilihan objek di setiap ronde.
-2.  Klik salah satu objek yang menurut Anda adalah pilihan yang benar.
-3.  Sistem akan memberitahu apakah pilihan Anda benar atau salah.
-4.  Setelah 2 detik, permainan akan otomatis lanjut ke ronde berikutnya.
-5.  Setelah 10 ronde, skor akhir Anda akan ditampilkan.
+4.  Buka browser Anda dan kunjungi `http://localhost:5173` (atau port yang ditampilkan di terminal).
