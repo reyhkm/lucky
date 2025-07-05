@@ -1,0 +1,60 @@
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212; /* A slightly softer black */
+}
+
+.choice-box {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.3s ease;
+  border: 3px solid transparent;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  user-select: none;
+}
+
+.choice-box:not(.is-disabled):hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+  border-color: #485fc7; /* Bulma's is-link color */
+}
+
+.choice-box.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.choice-box.selected {
+  border-color: #3e8ed0; /* Bulma's is-info color */
+  box-shadow: 0 0 20px rgba(62, 142, 208, 0.5);
+}
+
+.choice-box.correct {
+  background-color: #48c78e !important; /* is-success */
+  color: #fff !important;
+  border-color: #48c78e;
+  transform: scale(1.05);
+}
+
+.choice-box.wrong {
+  background-color: #f14668 !important; /* is-danger */
+  color: #fff !important;
+  border-color: #f14668;
+  opacity: 0.6;
+}
+
+.final-score {
+    animation: fadeInScaleUp 0.8s ease-out;
+}
+
+@keyframes fadeInScaleUp {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
